@@ -15,7 +15,7 @@ button, button:focus
 {outline: none;}
 
 .fx
-{display: -webkit-flex;display: -ms-flexbox;display: flex;}
+{display: -webkit-flex;display: -ms-flexbox;display: flex;flex: 1;}
 .fxwp
 {flex-wrap: wrap;}
 
@@ -54,6 +54,16 @@ button, button:focus
 {width:100%;}
 .anatimg
 {max-width: 1052px;}
+h1, h2, h3, p
+{margin: 0;font-size: 1em;}
+h1
+{font-size: 1.1em;}
+h2
+{font-size: 1.05em;}
+h3
+{font-size: 1.0em;}
+p
+{font-size: 1em;}
 
 a:visited, a:active, a:link, a:hover
 {text-decoration:none;padding:0;margin:0;outline:0;border:none;color:inherit;
@@ -64,9 +74,9 @@ a:visited, a:active, a:link, a:hover
 {color: #007bff;}
 
 .homelft 
-{background-color: #eaeaea;min-height: 100vh;color: #4b4b4b;font-size: calc(10px + 2vmin);}
+{background-color: #eaeaea;min-height: 100vh;color: #4b4b4b;font-size: calc(10px + 2vmin);padding: 15px;}
 .homerit 
-{background-color: #3c3c3c;min-height: 100vh;color: #61dafb;font-size: calc(10px + 2vmin);}
+{background-color: #3c3c3c;min-height: 100vh;color: #61dafb;font-size: calc(10px + 2vmin);padding: 15px;}
 .tac
 {text-align: center;}
 .bio

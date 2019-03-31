@@ -1,29 +1,22 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import { Images } from './theme'
 import './App.css';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Home, Skills, Niro, Nope } from './components'
 
 class App extends Component {
   render() {
     return (
-      <div className="fx fxdr fxjcc fxaic">
-        <div className="homelft w50 fx fxdc fxjcc fxaic tac">
-            <div className="bio">
-              <div className="bioimg">
-                <img src={Images.dp} alt="Crassus Niro" />
-              </div>
-              <p>Lithium Crassus Niro</p>
-            </div>
-        </div>
-        <div className="homerit w50 fx fxdc fxjcc fxaic">
-            <div className="skills">
-              <div className="">
-              </div>
-              Skills Summary
-                <p>Full-Stack JavaScript Engineer | JSKing | React Genius</p>
-            </div>
-        </div>
-      </div>   
+
+        <Router>
+          <Switch>
+            <Route exact path='/' component={Home}/>
+            <Route exact path='/niro' component={Niro}/>
+            <Route exact path='/skills' component={Skills}/>
+            <Route component={Nope}/>
+          </Switch>
+        </Router>
+
     );
   }
 }
