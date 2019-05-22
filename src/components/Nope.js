@@ -1,24 +1,28 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
-
 
 class Nope extends Component {
   render() {
     return (
-
-        <div className="homerit fx fxdc fxjcc fxaic">
-            <div className="skills">
-              <div className="">
-              </div>
-              Nothing to See Here Folks
-              <ul>
-                <li><Link to='/'>Home</Link></li>
-                <li><Link to='/niro'>Niro</Link></li>
-                <li><Link to='/skills'>Skills</Link></li>
-              </ul>
-            </div>
-        </div>
-
+      <div className="notfound fx fxdc fxjcc fxaic">
+        <h1>404</h1>
+        <h2>Nothing to See Here Folks</h2>
+        <h3>Looks like you're lost.</h3>
+        <h4>
+          Go <Link to="/react-spa/">Home</Link>
+        </h4>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/niro">Niro</Link>
+          </li>
+          <li>
+            <Link to="/skills">Skills</Link>
+          </li>
+        </ul>
+      </div>
     );
   }
 }
