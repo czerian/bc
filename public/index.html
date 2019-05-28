@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="theme-color" content="#000000" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Full-Stack JavaScript Engineer | JSKing | React Genius</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <title>Full-Stack JavaScript Engineer | JSKing | React Genius</title>
+  <meta name="google-site-verification" content="RNTcyF-MkL_y0GD81EZzBqG_Q3-datez1PKvYkBUFeo" />
+  <meta name="description"
+    content="Full Stack JavaScript Engineer (JavaScript/React/Redux/React Native/Node.js) + Rails" />
+  <meta name="keywords"
+    content="Bryanczar, Bryan Czar, Bryan Muli, Full Stack, JavaScript Engineer, JavaScript, React, Redux, React Native, Node.js, Rails, Express.js, Ruby on Rails, Apollo, MongoDB, PostgreSQL, GraphQL, Jest" />
+  <meta name="author" content="bryanczar.com" />
+  <script src='https://www.google.com/recaptcha/api.js?render=6LcQD4YUAAAAAMb7o06l-jcMSAM8Lo9R-_4oTu0s'></script>
+  <script>
+    /**** ga ****/
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-48211130-1', 'bryanczar.com');
+    ga('send', 'pageview');
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    grecaptcha.ready(function () {
+      grecaptcha.execute('6LcQD4YUAAAAAMb7o06l-jcMSAM8Lo9R-_4oTu0s', { action: 'reenquire' })
+        .then(function (token) { document.getElementById('recap').value = token; });
+    });
+  </script>
+</head>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+</body>
+
 </html>
