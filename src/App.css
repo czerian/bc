@@ -87,6 +87,10 @@ a:visited, a:active, a:link, a:hover
 {border-radius: 50%;width: 100%;}
 .skills
 {}
+.skills p 
+{font-size: 0.65em;white-space: pre-line;padding: 5px 0;}
+.home .skills
+{padding-left: 15px;}
 
 
 
@@ -115,6 +119,7 @@ a:visited, a:active, a:link, a:hover
 
 
 /* 
+<br />
 min-height: 100vh;
 font-size: calc(10px + 2vmin);
 color: #61dafb;

@@ -4,7 +4,7 @@ import { Niro, Skills } from "./";
 class Home extends Component {
   render() {
     return (
-      <div className="fx fxdr fxjcc fxaic">
+      <div className="home fx fxdr fxjcc fxaic">
         <div className="w50">
           <Niro />
         </div>
