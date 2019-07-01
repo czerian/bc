@@ -10,40 +10,28 @@ class Skills extends Component {
             <Link to="/">Skills Summary</Link>
             <hr />
             <p>
-              Front-End Development: <br />✓ JavaScript | React | Redux | Redux
-              Saga <br />✓ TypeScript | Flow | JSX | Babel | Webpack | SASS/SCSS
+              Front-End Development: <br />✓ JavaScript | React | Redux | Redux Saga | Redux Thunk
+              <br />✓ TypeScript | Flow | JSX | Babel | WebpaCk | SASS/SCSS
             </p>
             <p>
               {
-                "Back-End Development:\n✓ Node.js | Express.js | Apollo | Ruby on Rails"
+                "Back-End Development:\n✓ Node.js | Express.js | Ruby on Rails | REST APIs | GraphQL | Apollo"
               }
             </p>
             <p>
-              {
-                "Mobile Development:\n✓ React Native - Native Android & iOS mobile apps development"
-              }
+              {"Mobile Development:\n✓ React Native - Native Android & iOS mobile apps development"}
             </p>
             <p>{"Unit Testing:\n✓ Jest"}</p>
             <p>
               {
-                "Authentication || Authorization:\n✓ JSON Web Tokens (JWT) / OAuth"
+                "Authentication || Authorization:\n✓ JSON Web Tokens (JWT) | OAuth | Single Sign-On (SSO)"
               }
             </p>
-            <p>
-              {"Environments:\n✓ AWS: S3/EC2/ECS | Firebase | Heroku | Docker"}
-            </p>
-            <p>{"Databases:\n✓ MongoDB | PostgreSQL | GraphQL | MySQL"}</p>
+            <p>{"Environments:\n✓ AWS: S3/EC2/ECS | Firebase | Heroku | Docker"}</p>
+            <p>{"Databases:\n✓ MongoDB | PostgreSQL | MySQL"}</p>
             <p>{"Payment Processing\n✓ Stripe | Braintree/PayPal"}</p>
-            <p>
-              {
-                "Web Scraping/Web crawling\n✓ NodeJS + Puppeteer | Python Scrapy"
-              }
-            </p>
-            <p>
-              {
-                "Workflow & Version Control\n✓ CI/CD | Pipelines | Git(GitHub or Bitbucket)"
-              }
-            </p>
+            <p>{"Web Scraping/Web crawling\n✓ NodeJS + Puppeteer | Python Scrapy"}</p>
+            <p>{"Workflow & Version Control\n✓ CI/CD | Pipelines | Git(GitHub or Bitbucket)"}</p>
           </div>
         </div>
       </div>
