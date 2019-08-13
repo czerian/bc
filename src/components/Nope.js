@@ -9,9 +9,9 @@ class Nope extends Component {
         <h2>Nothing to See Here Folks</h2>
         <h3>Looks like you're lost.</h3>
         <h4>
-          Go <Link to="/react-spa/">Home</Link>
+          Go =&gt; <Link to="/">Home</Link>
         </h4>
-        <ul>
+        <ul class="nav">
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -21,6 +21,9 @@ class Nope extends Component {
           <li>
             <Link to="/skills">Skills</Link>
           </li>
+          <li>
+            <Link to="/dummy">404 Page</Link>
+          </li>
         </ul>
       </div>
     );
@@ -28,3 +31,6 @@ class Nope extends Component {
 }
 
 export default Nope;
+
+
+
