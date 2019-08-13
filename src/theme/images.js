@@ -3,7 +3,7 @@ const Images = {
   wabg: require("../images/wabg.png"),
   bc: require("../images/bryan_czar.jpg"),
   bm: require("../images/bryanmuli.jpg"),
-  bmw: require("../images/bryanmuliw.JPG"),
+  bmw: require("../images/bryanmuliw.jpg"),
   mother: require("../images/mother.jpg")
 };
 

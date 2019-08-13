@@ -1,10 +1,17 @@
 import React, { Component } from "react";
 import { Images } from "../theme";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+import { niroAction } from "../actions/niroActions";
+import PropTypes from "prop-types";
 
 class Niro extends Component {
+  componentDidMount() {
+    this.props.niroAction();
+  }
+
   render() {
-    const { hitems } = this.props;
+    const { items } = this.props.niro;
     return (
       <div className="homelft fx fxdc fxjcc fxaic tac">
         <div className="bio">
@@ -16,12 +23,12 @@ class Niro extends Component {
             </Link>
           </div>
           <h1>
-            <Link to="/">{hitems[0].name}</Link>
+            <Link to="/">{items[0].name}</Link>
           </h1>
           <h2>
-            <Link to="/skills">{hitems[1].name}</Link>
+            <Link to="/skills">{items[1].name}</Link>
           </h2>
-          <h3>{hitems[2].name}</h3>
+          <h3>{items[2].name}</h3>
           {/* {hitems.map(hitem => {
             const { id, name } = hitem;
             return <div key={id}>{name}</div>;
@@ -32,4 +39,16 @@ class Niro extends Component {
   }
 }
 
-export default Niro;
+Niro.propTypes = {
+  niroAction: PropTypes.func.isRequired,
+  niro: PropTypes.object.isRequired,
+};
+
+const mapStateToProps = state => ({
+  niro: state.niroReducer,
+});
+
+export default connect(
+  mapStateToProps,
+  { niroAction }
+)(Niro);

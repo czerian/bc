@@ -10,8 +10,11 @@ class Skills extends Component {
             <Link to="/">Skills Summary</Link>
             <hr />
             <p>
-              Front-End Development: <br />✓ JavaScript | React | Redux | Redux Saga | Redux Thunk
-              <br />✓ TypeScript | Flow | JSX | Babel | WebpaCk | SASS/SCSS
+              Front-End Development: <br />✓ JavaScript | React (including Hooks & Context) 
+              <br />✓ Redux (including Hooks) | Redux Saga | Redux Thunk
+              <br />✓ React Router | Styled Components | Storybook 
+              <br />✓ React Spring | React Transition Group
+              <br />✓ TypeScript | Flow | JSX | Babel | Webpack | SASS/SCSS
             </p>
             <p>
               {
@@ -27,7 +30,7 @@ class Skills extends Component {
                 "Authentication || Authorization:\n✓ JSON Web Tokens (JWT) | OAuth | Single Sign-On (SSO)"
               }
             </p>
-            <p>{"Environments:\n✓ AWS: S3/EC2/ECS | Firebase | Heroku | Docker"}</p>
+            <p>{"Environments || DevOps:\n✓ AWS: S3/EC2/ECS | Firebase | Heroku | Docker"}</p>
             <p>{"Databases:\n✓ MongoDB | PostgreSQL | MySQL"}</p>
             <p>{"Payment Processing\n✓ Stripe | Braintree/PayPal"}</p>
             <p>{"Web Scraping/Web crawling\n✓ NodeJS + Puppeteer | Python Scrapy"}</p>
