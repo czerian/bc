@@ -11,7 +11,7 @@ class Nope extends Component {
         <h4>
           Go =&gt; <Link to="/">Home</Link>
         </h4>
-        <ul class="nav">
+        <ul className="nav">
           <li>
             <Link to="/">Home</Link>
           </li>

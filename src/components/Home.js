@@ -10,12 +10,12 @@ class Home extends Component {
   }
 
   render() {
-    const { items } = this.props.item;
+    // const { items } = this.props.item;
     return (
       <div className="home fx fxdr fxjcc fxaic">
         <div className="w50">
-          {/* <Niro /> */}
-          <Niro hitems={items} />
+          <Niro />
+          {/* <Niro hitems={items} /> */}
           {/* <Progbar tsteps={tsteps} cstep={cstep} crhit={crhit} /> */}
         </div>
         <div className="w50">

@@ -1,40 +1,28 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+import { skillsAction } from "../actions/skillsActions";
+import PropTypes from "prop-types";
 
 class Skills extends Component {
+  componentDidMount() {
+    this.props.skillsAction();
+  }
+
   render() {
+    const { greens } = this.props.skills;
     return (
       <div className="homerit fx fxdc fxjcc fxaic">
         <div className="skills">
           <div className="">
             <Link to="/">Skills Summary</Link>
             <hr />
-            <p>
-              Front-End Development: <br />✓ JavaScript | React (including Hooks & Context) 
-              <br />✓ Redux (including Hooks) | Redux Saga | Redux Thunk
-              <br />✓ React Router | Styled Components | Storybook 
-              <br />✓ React Spring | React Transition Group
-              <br />✓ TypeScript | Flow | JSX | Babel | Webpack | SASS/SCSS
-            </p>
-            <p>
-              {
-                "Back-End Development:\n✓ Node.js | Express.js | Ruby on Rails | REST APIs | GraphQL | Apollo"
-              }
-            </p>
-            <p>
-              {"Mobile Development:\n✓ React Native - Native Android & iOS mobile apps development"}
-            </p>
-            <p>{"Unit Testing:\n✓ Jest"}</p>
-            <p>
-              {
-                "Authentication || Authorization:\n✓ JSON Web Tokens (JWT) | OAuth | Single Sign-On (SSO)"
-              }
-            </p>
-            <p>{"Environments || DevOps:\n✓ AWS: S3/EC2/ECS | Firebase | Heroku | Docker"}</p>
-            <p>{"Databases:\n✓ MongoDB | PostgreSQL | MySQL"}</p>
-            <p>{"Payment Processing\n✓ Stripe | Braintree/PayPal"}</p>
-            <p>{"Web Scraping/Web crawling\n✓ NodeJS + Puppeteer | Python Scrapy"}</p>
-            <p>{"Workflow & Version Control\n✓ CI/CD | Pipelines | Git(GitHub or Bitbucket)"}</p>
+
+            {greens.map(green => {
+                        const { id, skillt, skilld } = green;
+                        return <p key={id}>{skillt}{"\n"}{skilld}</p>;
+                        // return <p key={id}>{skillt}{": \n ✓ "}{skilld}</p>;
+                      })}
           </div>
         </div>
       </div>
@@ -42,4 +30,16 @@ class Skills extends Component {
   }
 }
 
-export default Skills;
+Skills.propTypes = {
+  skillsAction: PropTypes.func.isRequired,
+  skills: PropTypes.object.isRequired,
+};
+
+const mapStateToProps = state => ({
+  skills: state.skillsReducer,
+});
+
+export default connect(
+  mapStateToProps,
+  { skillsAction }
+)(Skills);
