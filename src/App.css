@@ -82,7 +82,8 @@ a:visited, a:active, a:link, a:hover
 .bio
 {}
 .bioimg
-{background-color: #76b900;border-radius: 50%;width: 340px;padding: 10px;font-size: 0;line-height: 0;}
+{background-color: #76b900;background-color:#37a000;background-color: #2e8b57;
+  border-radius: 50%;width: 340px;padding: 10px;font-size: 0;line-height: 0;}
 .bioimg img
 {border-radius: 50%;width: 100%;}
 .skills
@@ -91,6 +92,7 @@ a:visited, a:active, a:link, a:hover
 {font-size: 0.65em;white-space: pre-line;padding: 5px 0;}
 .home .skills
 {padding-left: 15px;}
+
 .nav
 {list-style:none}
 .nav li
@@ -101,6 +103,20 @@ a:visited, a:active, a:link, a:hover
 {text-decoration:underline}
 .nav li a.active
 {text-decoration:none;border-bottom:2px solid #fff}
+
+.navigation
+{background-color:silver;margin: auto;text-align: center;position: absolute;top: 2%;border-radius: 16px;}
+.navigation .nav
+{margin: 0;padding: 0;}
+.navigation .nav li 
+{display: inline-block;padding: 0;}
+.navigation .nav li a 
+{font-weight: 700;font-size: 18px;text-decoration: none;padding: 6px 10px;display: inline-block;line-height: 18px;border-radius: 16px;}
+.navigation .nav li a:hover
+{text-decoration: none;background-color:#4682b4;color:#fff;}
+.navigation .nav li a.active
+{text-decoration:none;border-bottom: none;background-color:#76b900;background-color:#37a000;background-color: #2e8b57;color:#fff;}
+
 .notfound
 {background-color:#4682b4;background-color:#708090;background-color:brown;background-color:#2e8b57;background-color:#3c3c3c;
   min-height:100vh;color:#fff;font-size:15px;padding:15px}

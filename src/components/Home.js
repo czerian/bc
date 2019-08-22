@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Niro, Skills } from "./";
+import { Niro, Skills, Navigation } from "./";
 import { connect } from "react-redux";
 import { getItems } from "../actions/itemActions";
 import PropTypes from "prop-types";
@@ -13,6 +13,7 @@ class Home extends Component {
     // const { items } = this.props.item;
     return (
       <div className="home fx fxdr fxjcc fxaic">
+        <Navigation/>
         <div className="w50">
           <Niro />
           {/* <Niro hitems={items} /> */}
