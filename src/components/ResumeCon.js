@@ -1,14 +1,14 @@
 import React from 'react'
-import { Niro, Navigation, ContactBtn } from "./";
+import { Resume, Navigation, ContactBtn } from "./";
 
-const NiroCon = () => {
+const ResumeCon = () => {
     return (
         <div className="fx fxdr fxjcc fxaic">
           <Navigation />
-          <Niro />   
+          <Resume /> 
           <ContactBtn/>    
         </div>
     )
 }
 
-export default NiroCon
+export default ResumeCon

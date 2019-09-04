@@ -15,6 +15,8 @@ const initialState = {
   ],
 };
 
+// { id: 4, skillt: "Unit Testing:", skilld: "✓ Jest \n✔︎ Backend \n✅ Trello" },
+
 export default function(state = initialState, action) {
   switch (action.type) {
     case SKILLS:

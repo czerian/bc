@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Niro, Skills, Navigation } from "./";
+import { Niro, Skills, Navigation, ContactBtn } from "./";
 import { connect } from "react-redux";
 import { getItems } from "../actions/itemActions";
 import PropTypes from "prop-types";
@@ -22,6 +22,7 @@ class Home extends Component {
         <div className="w50">
           <Skills />
         </div>
+        <ContactBtn/>
       </div>
     );
   }

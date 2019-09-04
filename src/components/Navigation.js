@@ -18,10 +18,10 @@ const Navigation = () => {
             <NavLink to="/skills">Skills</NavLink>
             </li>
             <li>
-            <NavLink to="/contact">My Resume</NavLink>
+            <NavLink to="/my-resume">My Resume</NavLink>
             </li>
             <li>
-            <NavLink to="/contact">Contact Me</NavLink>
+            <NavLink to="/contact-me">Contact Me</NavLink>
             </li>
             <li>
             <NavLink to="/dummy">404</NavLink>
