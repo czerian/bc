@@ -1,10 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Modal from "react-animated-modal";
+import { Contact } from "./";
 
 const ContactBtn = () => {
+    const [showModal, setShowModal] = useState(false);
+
     return (
-        <div className="ContactBtn">
+        <>
+        <Modal
+            visible={showModal}
+            closemodal={() => setShowModal(false)}
+            type="zoomInDown"
+        >
+            <Contact/>
+        </Modal>
+
+        <div className="ContactBtn" onClick={() => setShowModal(true)}>
             <button>Say Hello | Contact Me</button>
         </div>
+        </>
     )
 }
 

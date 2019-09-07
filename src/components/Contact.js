@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { connect } from "react-redux";
 import { helloAction, contactAction } from "../actions/contactActions";
 import PropTypes from "prop-types";
+import {Helmet} from "react-helmet";
+import ReCAPTCHA from "react-google-recaptcha";
 
 class Contact extends Component {
     constructor(props) {
@@ -30,16 +32,16 @@ class Contact extends Component {
 
     conSubmit = e => {
             e.preventDefault();
-            const helloMsg = [
-                {name: this.state.name},
-                {email: this.state.email},
-                {phone: this.state.phone},
-                {msg: this.state.msg},
-                {recaptchare: document.getElementById('recap').value},
-                {rbot: this.state.rbot}
-            ];
-            // this.props.contactAction(helloMsg);
-            this.props.contactAction(this.state.name, this.state.email, this.state.phone, this.state.msg, document.getElementById('recap').value, this.state.rbot);
+            const helloMsg = {
+                name: this.state.name,
+                email: this.state.email,
+                phone: this.state.phone,
+                msg: this.state.msg,
+                recaptchare: document.getElementById('recap').value,
+                rbot: this.state.rbot
+            };
+            this.props.contactAction(helloMsg);
+            // this.props.contactAction(this.state.name, this.state.email, this.state.phone, this.state.msg, document.getElementById('recap').value, this.state.rbot);
             // console.log(helloMsg);
     }
 
@@ -47,10 +49,24 @@ class Contact extends Component {
             this.setState({ [e.target.name]: e.target.value });
     };
 
+    reCap = e => {
+        console.log(e, "<= your recaptcha token")
+    };
+
     render() {
     const { hello, msg, status, id, sending, subRes, subResd, msgd, statusd } = this.props.olla;
             return (
             <div className="homelft fx fxdc fxjcc fxaic tac">
+                <Helmet>
+                    <title>Say Hello | Full-Stack JavaScript Engineer</title>
+                    <meta name="theme-color" content="#4682b4" />
+                    <meta name="description" content="Say Hello | Contact Me | Full-Stack JavaScript Engineer" />
+                    {/* <script src='https://www.google.com/recaptcha/api.js?render=6LcQD4YUAAAAAMb7o06l-jcMSAM8Lo9R-_4oTu0s'></script> */}
+                    <script>
+                    {/* {`grecaptcha.ready(function () {grecaptcha.execute('6LcQD4YUAAAAAMb7o06l-jcMSAM8Lo9R-_4oTu0s', { action: 'reenquire' })
+                        .then(function (token) { document.getElementById('recap').value = token; });});`} */}
+                    </script>
+                </Helmet>
                 <h1>
                 {hello ? (`${hello[0].say}`):('Say Hi || Contact Me')}
                 <hr />
@@ -85,6 +101,11 @@ class Contact extends Component {
                     onChange={this.ifChange}
                     />
 
+                    <ReCAPTCHA
+                        sitekey="6LcQD4YUAAAAAMb7o06l-jcMSAM8Lo9R-_4oTu0s"
+                        onChange={this.reCap}
+                    />
+
                     <input 
                     type="hidden" 
                     id="recap" 
@@ -116,7 +137,7 @@ class Contact extends Component {
                 {/* <div><p>{msg}</p></div>
                 <div><p>{status}</p></div> */}
                     <input type="submit" value="SUBMIT" />
-                    </form>
+                </form>                   
             </div>
         );
     }
