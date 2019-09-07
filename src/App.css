@@ -123,6 +123,12 @@ a:visited, a:active, a:link, a:hover
   background-color: #eaeaea;box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.55);
   border: 1px solid #DDD;
 }
+.minvh
+{min-height: 100vh;background-color: #eaeaea;color: #4b4b4b;padding: 15px;}
+.condiv 
+{background-color: #eaeaea;color: #4b4b4b;padding: 15px;font-size: calc(10px + 2vmin);border-radius: 16px;}
+.react-modal .react-modal-body 
+{background-color: #eaeaea;width: 400px;min-height: 200px;border-radius: 16px;}
 .conForm
 {display:block;width:100%;max-width:600px;}
 .conForm input, .conForm textarea
@@ -157,6 +163,8 @@ a:visited, a:active, a:link, a:hover
 {margin-top: 16px;background-color: #2e8b57;color: #FFF;font-weight: 700;box-shadow: none;border: none;cursor: pointer;}
 .conForm > input:last-child:hover
 {background-color:#4682b4;}
+.conForm small
+{font-size: 1rem;}
 .subqsn 
 {width: 100%;}
 .qsndv 
@@ -165,6 +173,8 @@ a:visited, a:active, a:link, a:hover
 {width: 20%;float: right;}
 .rbotdv input
 {margin: 0;}
+.recap div div div 
+{margin: auto;}
 
 .navigation .nav
 {margin: 0;padding: 0;}

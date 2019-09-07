@@ -3,6 +3,7 @@ import { Niro, Skills, Navigation, ContactBtn } from "./";
 import { connect } from "react-redux";
 import { getItems } from "../actions/itemActions";
 import PropTypes from "prop-types";
+import {Helmet} from "react-helmet";
 
 class Home extends Component {
   componentDidMount() {
@@ -12,18 +13,25 @@ class Home extends Component {
   render() {
     // const { items } = this.props.item;
     return (
-      <div className="home fx fxdr fxjcc fxaic">
-        <Navigation/>
-        <div className="w50">
-          <Niro />
-          {/* <Niro hitems={items} /> */}
-          {/* <Progbar tsteps={tsteps} cstep={cstep} crhit={crhit} /> */}
-        </div>
-        <div className="w50">
-          <Skills />
-        </div>
-        <ContactBtn/>
-      </div>
+        <>
+        <Helmet>
+          <title>Full-Stack JavaScript Engineer | JSKing | React Genius</title>
+          <meta name="theme-color" content="#2e8b57" />
+          <meta name="sexxy" content="Full-Stack JavaScript Engineer | JSKing | React Genius" />                   
+        </Helmet>
+        <div className="home fx fxdr fxjcc fxaic">
+            <Navigation/>
+            <div className="w50">
+              <Niro />
+              {/* <Niro hitems={items} /> */}
+              {/* <Progbar tsteps={tsteps} cstep={cstep} crhit={crhit} /> */}
+            </div>
+            <div className="w50">
+              <Skills />
+            </div>
+            <ContactBtn/>
+          </div>
+        </>
     );
   }
 }

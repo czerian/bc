@@ -10,7 +10,7 @@ const ContactBtn = () => {
         <Modal
             visible={showModal}
             closemodal={() => setShowModal(false)}
-            type="zoomInDown"
+            type="zoomIn"
         >
             <Contact/>
         </Modal>
