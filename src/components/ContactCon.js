@@ -1,5 +1,5 @@
 import React from 'react'
-import { Contact, Navigation, ContactBtn } from "./";
+import { Contact, Navigation } from "./";
 import {Helmet} from "react-helmet";
 
 const ContactCon = () => {
@@ -13,7 +13,6 @@ const ContactCon = () => {
         <div className="minvh fx fxdr fxjcc fxaic">
           <Navigation />
           <Contact /> 
-          <ContactBtn/>    
         </div>
       </>
     )

@@ -107,7 +107,7 @@ a:visited, a:active, a:link, a:hover
 {text-decoration:none;border-bottom:2px solid #fff}
 
 .ContactBtn
-{position: absolute;bottom: 2%;border-radius: 16px;}
+{position: absolute;bottom: 2%;border-radius: 16px;position: fixed;}
 .ContactBtn button
 {border-radius: 16px;outline: none;padding: 5px 12px;margin: 0;border: 0;text-decoration: none;
   line-height: 18px;font-size: 18px;text-decoration: none;font-weight: 700;z-index: 9;
@@ -127,8 +127,21 @@ a:visited, a:active, a:link, a:hover
 {min-height: 100vh;background-color: #eaeaea;color: #4b4b4b;padding: 15px;}
 .condiv 
 {background-color: #eaeaea;color: #4b4b4b;padding: 15px;font-size: calc(10px + 2vmin);border-radius: 16px;}
+.condiv h1
+{line-height: 1.0rem;}
 .react-modal .react-modal-body 
-{background-color: #eaeaea;width: 400px;min-height: 200px;border-radius: 16px;}
+{background-color: #eaeaea;width: 100%;max-width: 400px;min-height: 200px;border-radius: 16px;margin: 15px;}
+.react-modal .react-modal-body .condiv h1
+{font-size: 0.67em;}
+.rc-anchor 
+{-moz-box-shadow: none;-webkit-box-shadow: none;box-shadow: none;}
+.rc-anchor-light 
+{border-radius: 16px;}
+.react-modal-body-close 
+{background: #666;border-radius: 50%;}
+.react-modal .react-modal-body .react-modal-body-close:after, .react-modal .react-modal-body .react-modal-body-close:before 
+{background: #fff;}
+
 .conForm
 {display:block;width:100%;max-width:600px;}
 .conForm input, .conForm textarea
@@ -160,11 +173,12 @@ a:visited, a:active, a:link, a:hover
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.0), 0 0 8px rgba(146, 139, 87, 0.25);
 }
 .conForm > input:last-child, .conForm > input:last-child:hover, .conForm > input:last-child:focus
-{margin-top: 16px;background-color: #2e8b57;color: #FFF;font-weight: 700;box-shadow: none;border: none;cursor: pointer;}
+{margin-top: 0px;background-color: #2e8b57;color: #FFF;font-weight: 700;box-shadow: none;border: none;cursor: pointer;}
 .conForm > input:last-child:hover
 {background-color:#4682b4;}
 .conForm small
-{font-size: 1rem;}
+{font-size: 1rem;line-height: 1rem;padding: 8px 0;display: block;}
+
 .subqsn 
 {width: 100%;}
 .qsndv 

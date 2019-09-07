@@ -93,7 +93,7 @@ class Contact extends Component {
                         onChange={this.reCap}
                     />
                     </div>
-                <div><small><em>{sending ? ('Sending.....'):(subRes)}</em></small></div>
+                <small><em>{sending ? ('Sending.....'):(subRes)}</em></small>
                     <input type="submit" value="SUBMIT" />
                 </form>                   
             </div>
