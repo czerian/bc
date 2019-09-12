@@ -1,5 +1,5 @@
 import React from 'react'
-import { Contact, Navigation } from "./";
+import { Contact, Navigation } from "../components";
 import {Helmet} from "react-helmet";
 
 const ContactCon = () => {

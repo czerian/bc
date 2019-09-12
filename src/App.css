@@ -48,8 +48,17 @@ button, button:focus
 
 .w100
 {width:100%;}
+.w80
+{width:80%;}
+.w75
+{width:75%;}
 .w50
 {width:50%;}
+.w25
+{width:25%;}
+.w20
+{width:20%;}
+
 .h100
 {height:100%;}
 .img100

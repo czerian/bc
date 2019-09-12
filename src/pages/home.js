@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Niro, Skills, Navigation, ContactBtn } from "./";
+import { Niro, Skills, Navigation, ContactBtn } from "../components";
 import { connect } from "react-redux";
 import { getItems } from "../actions/itemActions";
 import PropTypes from "prop-types";

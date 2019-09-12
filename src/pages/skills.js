@@ -1,5 +1,5 @@
 import React from 'react'
-import { Skills, Navigation, ContactBtn } from "./";
+import { Skills, Navigation, ContactBtn } from "../components";
 import {Helmet} from "react-helmet";
 
 const SkillsCon = () => {

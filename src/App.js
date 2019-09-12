@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Home, SkillsCon, NiroCon, Nope, ResumeCon, ContactCon } from "./components";
-
+import { Home, SkillsCon, NiroCon, Nope, ResumeCon, ContactCon } from "./pages";
 import { Provider } from "react-redux";
 import store from "./store";
 

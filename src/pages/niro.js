@@ -1,7 +1,6 @@
 import React from 'react'
-import { Niro, Navigation, ContactBtn } from "./";
+import { Niro, Navigation, ContactBtn } from "../components";
 import {Helmet} from "react-helmet";
-
 
 const NiroCon = () => {
     return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Resume, Navigation, ContactBtn } from "./";
+import { ResumeDev, ResumeProfile, ResumeAbout, ResumeSkills, ResumeEducation, Navigation, ContactBtn } from "../components";
 import {Helmet} from "react-helmet";
 
 const ResumeCon = () => {
@@ -12,8 +12,16 @@ const ResumeCon = () => {
       </Helmet>
         <div className="fx fxdr fxjcc fxaic">
           <Navigation />
-          <Resume /> 
-          <ContactBtn/>    
+          <div className="w25">
+            <ResumeDev /> 
+            <ResumeProfile />
+          </div>
+          <div className="w75">
+            <ResumeAbout /> 
+            <ResumeSkills /> 
+            <ResumeEducation /> 
+          </div>
+            <ContactBtn/>    
         </div>
       </>
     )
