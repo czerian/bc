@@ -4,7 +4,7 @@ const Images = {
   bc: require("../images/bryan_czar.jpg"),
   bm: require("../images/bryanmuli.jpg"),
   bmw: require("../images/bryanmuliw.jpg"),
-  mother: require("../images/mother.jpg")
+  libby: require("../images/libby.jpg")
 };
 
 export default Images;
