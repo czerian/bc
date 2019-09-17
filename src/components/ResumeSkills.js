@@ -11,19 +11,19 @@ const ResumeSkills = (props) => {
   });
 
   return (
-    <div className="fx fxdc">
-        <div className="skills">
-            <div className="">
-                Skills Summary
-                <hr />
-
-                {skills.map(skill => {
+    <div className="rsm skills">
+    <div className="titol fx fxdr fxaic fxjcfs">
+    <div className="fx fxdr fxjcc fxaic"><span role="img" aria-label="Skills">💼</span></div><div>Skills Summary</div>
+    </div> 
+    <div className="rsmdv">             
+    <div>
+    I have an all round knowledge of the web environment and various web technologies. I’ve received professional training, learned, practiced and mastered:
+    </div>   
+    {skills.map(skill => {
                             const { id, skillt, skilld } = skill;
-                            return <p key={id}>{skillt}{"\n"}{skilld}</p>;
-                            // return <p key={id}>{skillt}{": \n ✓ "}{skilld}</p>;
+                            return <p key={id}><strong>{skillt}</strong>{"\n"}{skilld}</p>;
                         })}
-            </div>
-        </div>
+    </div>
     </div>    
   )
 };

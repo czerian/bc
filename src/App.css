@@ -217,10 +217,76 @@ a:visited, a:active, a:link, a:hover
 {margin: auto;}
 
 
+.resumecon
+{background-color: grey;}
 .resume
-{max-width: 1000px;margin: auto;padding: 80px 0;background: lavender;}
+{max-width: 1000px;margin: auto;padding: 80px 0;}
 .resume .bioimg
-{width: auto;max-width: 340px;}
+{width: auto;max-width: 340px;background-color: #74B943;}
+.resume .w30
+{background-color: #3c3c3c;color: #fff;}
+.resume .w70
+{background-color: #fff;color: #4b4b4b;color:#525659;padding: 50px 10px 50px 50px;}
+.rsm
+{padding-top:40px;}
+.about
+{padding-top: 0;}
+.rsm div ul
+{margin: 0;padding: 0;}
+.rsm div ul li
+{padding-bottom: 6px;}
+.rsm div ul li h6 
+{margin: 0;font-size: 1.1rem;}
+.rsm div ul li p
+{white-space: pre-line;}
+.w30 .titol
+{color: #75BA43;}
+.w70 .titol
+{color:#525659;}
+.titol div:first-child
+{background-color: #75BA43;border-radius: 50%;width: 60px;max-width: 60px;height: 60px;max-height: 60px;}
+.titol div span
+{text-align: center;font-size: 2.4rem;line-height: 2.4rem;}
+.titol div:last-child
+{font-weight: bold;padding-left: 10px;font-size: 2.0rem;}
+.wspl
+{white-space: pre-line;}
+.resume .skills p 
+{font-size: 1.0em;white-space: pre-line;padding: 5px 0;}
+.rsmdv
+{padding: 0 50px 0 74px;}
+.devx
+{background-color: #2B2B2B;padding: 100px 50px 100px 50px;}
+.profile
+{padding: 0;}
+.profile .titol
+{padding: 50px 0 14px 30px;}
+.profile > div:last-child
+{padding: 0 0 0 50px;}
+.education .rsmdv > div
+{padding-bottom: 12px;} 
+.education .rsmdv div div div
+{display: inline-block;}
+.education .rsmdv div div div:first-child
+{padding-right: 20px;}
+.education .rsmdv div div div span
+{padding-right: 0px;}
+.education .rsmdv div h3
+{font-size: 1.1rem;}
+.education .rsmdv div h4
+{font-weight: normal;}
+.resume .bio h1, .resume .bio h3
+{color: #75BA43;}
+.resume .bio h1, .resume .bio h2, .resume .bio h3
+{padding-top: 5px;}
+.resume .bio h1
+{font-size: 1.6em;}
+.resume .bio h2
+{font-size: 1.6em;}
+.resume .bio h3
+{}
+.react-modal 
+{top: 0;left: 0;}
 
 
 .notfound
@@ -259,6 +325,7 @@ a:visited, a:active, a:link, a:hover
 
 /* 
 
+background-color: #3A3A39;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);

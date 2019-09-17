@@ -11,15 +11,14 @@ const ResumeAbout = (props) => {
   });
 
   return (
-    <div className="fx fxdc fxjcc fxaic">
-        <div className="skills">
-            <div className="">
-                About Me
-                <hr />
-                {about.me}
-            </div>
-        </div>
-    </div>    
+    <div className="rsm about">
+    <div className="titol fx fxdr fxaic fxjcfs">
+    <div className="fx fxdr fxjcc fxaic"><span role="img" aria-label="About">📜</span></div><div>About Me</div>
+    </div>
+    <div className="rsmdv wspl">
+    {about.me}
+    </div>
+    </div>
   )
 };
 

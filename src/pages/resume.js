@@ -11,17 +11,19 @@ const ResumeCon = () => {
           <meta name="sexxy" content="My Resume | Full-Stack JavaScript Engineer" />                   
         </Helmet>
         <Navigation />
-        <div className="resume fx fxdr fxjcc">
-          <div className="w30">
-            <ResumeDev /> 
-            <ResumeProfile />
-          </div>
-          <div className="w70">
-            <ResumeAbout /> 
-            <ResumeSkills /> 
-            <ResumeEducation /> 
-          </div>
-            <ContactBtn/>    
+        <div className="resumecon">
+            <div className="resume fx fxdr fxjcc">
+              <div className="w30">
+                <ResumeDev /> 
+                <ResumeProfile />
+              </div>
+              <div className="w70">
+                <ResumeAbout /> 
+                <ResumeSkills /> 
+                <ResumeEducation /> 
+              </div>
+                <ContactBtn/>    
+            </div>
         </div>
       </>
     )

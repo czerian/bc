@@ -10,11 +10,14 @@ const ResumeDev = (props) => {
   const { dev } = props.niro;
 
   useEffect(() => {
+    console.log('heat');
+    console.log(props);
+    // resumeDevAction(); 
     // props.resumeDevAction(); 
   });
 
   return (
-        <div className="fx fxdc fxjcc fxaic tac">
+        <div className="fx fxdc fxjcc fxaic tac devx">
           <div className="bio">
             <div className="fx fxdr fxjcc fxaic">    
                 <div className="bioimg">
