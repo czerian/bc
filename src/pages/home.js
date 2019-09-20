@@ -1,17 +1,13 @@
 import React, { Component } from "react";
 import { Niro, Skills, Navigation, ContactBtn } from "../components";
-import { connect } from "react-redux";
-import { getItems } from "../actions/itemActions";
-import PropTypes from "prop-types";
 import {Helmet} from "react-helmet";
 
 class Home extends Component {
   componentDidMount() {
-    this.props.getItems();
+
   }
 
   render() {
-    // const { items } = this.props.item;
     return (
         <>
         <Helmet>
@@ -23,8 +19,6 @@ class Home extends Component {
             <Navigation/>
             <div className="w50">
               <Niro />
-              {/* <Niro hitems={items} /> */}
-              {/* <Progbar tsteps={tsteps} cstep={cstep} crhit={crhit} /> */}
             </div>
             <div className="w50">
               <Skills />
@@ -36,16 +30,4 @@ class Home extends Component {
   }
 }
 
-Home.propTypes = {
-  getItems: PropTypes.func.isRequired,
-  item: PropTypes.object.isRequired,
-};
-
-const mapStateToProps = state => ({
-  item: state.item,
-});
-
-export default connect(
-  mapStateToProps,
-  { getItems }
-)(Home);
+export default Home

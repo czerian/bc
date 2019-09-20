@@ -136,6 +136,7 @@ a:visited, a:active, a:link, a:hover
   background-color: #eaeaea;box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.55);
   border: 1px solid #DDD;left: 50%;
   -webkit-transform: translate(-50%, 0%);transform: translate(-50%, 0%);
+  width: max-content;
 }
 .navigation .nav
 {margin: 0;padding: 0;}
@@ -300,7 +301,24 @@ a:visited, a:active, a:link, a:hover
 {font-size:2em}
 .notfound h4 a
 {text-decoration:underline}
+.notfound .nav 
+{padding: 0;}
 
+@media screen and (max-width:900px){
+  .resume .w30 
+  {width: 40%;}
+  .resume .w70 
+  {padding: 20px 10px 20px 20px;}
+  .devx 
+  {padding: 100px 50px 100px 50px;}
+  .rsmdv 
+  {padding: 10px 0;}
+  .rsm 
+  {padding-top: 30px;}
+  .navigation .nav li a 
+  {font-size: 14px;}
+
+}
 @media screen and (max-width:800px){
   .home
   {-webkit-flex-direction:column;flex-direction:column}
@@ -312,6 +330,15 @@ a:visited, a:active, a:link, a:hover
   {max-width:240px}
 }
 
+@media screen and (max-width:600px){
+.resume
+{-webkit-flex-direction: column;-ms-flex-direction: column;flex-direction: column;}
+.resume .w30, .resume .w70 
+{width: 100%;}
+.profile 
+{padding: 20px 0;}
+
+}
 
 
 @keyframes App-logo-spin {

@@ -9,8 +9,5 @@ export const RESUME_DEV = "RESUME_DEV";
 export const RESUME_EDUCATION = "RESUME_EDUCATION";
 export const RESUME_PROFILE = "RESUME_PROFILE";
 export const RESUME_SKILLS = "RESUME_SKILLS";
-export const GET_ITEMS = "GET_ITEMS";
-
-
 
 
