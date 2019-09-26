@@ -8,7 +8,9 @@ const ResumeCon = () => {
         <Helmet>
           <title>My Resume | Full-Stack JavaScript Engineer</title>
           <meta name="theme-color" content="#2e8b57" />
-          <meta name="sexxy" content="My Resume | Full-Stack JavaScript Engineer" />                   
+          <meta name="sexxy" content="My Resume | Full-Stack JavaScript Engineer" /> 
+          <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet"></link>
+          <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700&display=swap" rel="stylesheet"></link>                 
         </Helmet>
         <Navigation />
         <div className="resumecon">

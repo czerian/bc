@@ -109,15 +109,15 @@ a:visited, a:active, a:link, a:hover
 {padding-left: 15px;}
 
 .nav
-{list-style:none}
+{list-style:none;}
 .nav li
-{display:inline;padding:0 10px}
+{display:inline;padding:0 10px;}
 .nav li a
-{font-weight:700;font-size:18px;text-decoration:none}
+{font-weight:700;font-size:1.15em;text-decoration:none;}
 .nav li a:hover
-{text-decoration:underline}
+{text-decoration:underline;}
 .nav li a.active
-{text-decoration:none;border-bottom:2px solid #fff}
+{text-decoration:none;border-bottom:2px solid #fff;}
 
 .ContactBtn
 {position: absolute;bottom: 2%;border-radius: 16px;position: fixed;}
@@ -136,14 +136,14 @@ a:visited, a:active, a:link, a:hover
   background-color: #eaeaea;box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.55);
   border: 1px solid #DDD;left: 50%;
   -webkit-transform: translate(-50%, 0%);transform: translate(-50%, 0%);
-  width: max-content;
+  width: fit-content;
 }
 .navigation .nav
 {margin: 0;padding: 0;}
 .navigation .nav li 
 {display: inline-block;padding: 0;}
 .navigation .nav li a 
-{font-weight: 700;font-size: 18px;text-decoration: none;padding: 6px 10px;color: #222;
+{font-weight: 700;font-size: 1.15em;text-decoration: none;padding: 6px 10px;color: #222;
   display: inline-block;line-height: 18px;border-radius: 16px;padding: 5px 10px 6px 10px;}
 .navigation .nav li a:hover
 {text-decoration: none;background-color:#4682b4;background-color: #2e8b57;color:#fff;}
@@ -249,7 +249,7 @@ a:visited, a:active, a:link, a:hover
 .titol div span
 {text-align: center;font-size: 2.4rem;line-height: 2.4rem;}
 .titol div:last-child
-{font-weight: bold;padding-left: 10px;font-size: 2.0rem;}
+{font-weight: bold;padding-left: 10px;font-size: 2.0rem;font-family: 'Titillium Web', sans-serif;}
 .wspl
 {white-space: pre-line;}
 .resume .skills p 
@@ -273,7 +273,7 @@ a:visited, a:active, a:link, a:hover
 .education .rsmdv div div div span
 {padding-right: 0px;}
 .education .rsmdv div h3
-{font-size: 1.1rem;}
+{font-size: 1.1rem;font-family: 'PT Sans', sans-serif;}
 .education .rsmdv div h4
 {font-weight: normal;}
 .resume .bio h1, .resume .bio h3
@@ -315,8 +315,6 @@ a:visited, a:active, a:link, a:hover
   {padding: 10px 0;}
   .rsm 
   {padding-top: 30px;}
-  .navigation .nav li a 
-  {font-size: 14px;}
 
 }
 @media screen and (max-width:800px){
@@ -328,6 +326,9 @@ a:visited, a:active, a:link, a:hover
   {min-height:auto;padding:30px 15px}
   .bioimg
   {max-width:240px}
+  .navigation .nav li a 
+  {font-size: 0.85em;padding: 5px 5px 6px 5px;}
+
 }
 
 @media screen and (max-width:600px){
@@ -337,6 +338,10 @@ a:visited, a:active, a:link, a:hover
 {width: 100%;}
 .profile 
 {padding: 20px 0;}
+.ContactBtn
+{width: fit-content;left: 50%;-webkit-transform: translate(-50%, 0%);transform: translate(-50%, 0%);}
+.titol div:last-child 
+{padding-left: 5px;font-size: 1.68rem;}
 
 }
 
