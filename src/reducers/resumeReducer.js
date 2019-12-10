@@ -7,16 +7,16 @@ const iState = {
       { id: 3, name: "(JavaScript/React/Redux/React Native/Node.js) + Rails" }
     ],
     skills: [
-        { id: 1, skillt: "Front-End Development:", skilld: "✔ JavaScript | React (including Hooks & Context)\n✔ Redux (including Hooks) | Redux Saga | Redux Thunk\n✔ React Router | Styled Components | Storybook \n✔ React Spring | React Transition Group\n✔ TypeScript | Next.js | Flow | JSX | Babel | Webpack | Sass" },
-        { id: 2, skillt: "Back-End Development:", skilld: "✔ Node.js | Express.js | Ruby on Rails | REST APIs\n✔ Socket.io | GraphQL | Apollo" },
+        { id: 1, skillt: "Front-End Development:", skilld: "✔ JavaScript | React (including Hooks & Context)\n✔ Redux (including Hooks) | Redux Saga | Redux Thunk\n✔ React Router | Styled Components | Storybook \n✔ React Spring | React Transition Group\n✔ Next.js | Gatsby\n✔ TypeScript | Flow | JSX | Babel | Webpack | Sass" },
+        { id: 2, skillt: "Back-End Development:", skilld: "✔ Node.js | Express.js | Ruby on Rails | Socket.io\n✔ REST APIs | GraphQL | Apollo" },
         { id: 3, skillt: "Mobile Development:", skilld: "✔ React Native - Native Android & iOS mobile apps development" },
         { id: 4, skillt: "Unit Testing:", skilld: "✔ Jest" },
         { id: 5, skillt: "Authentication || Authorization:", skilld: "✔ JSON Web Tokens (JWT) | OAuth | Single Sign-On (SSO)" },
-        { id: 6, skillt: "Environments || DevOps:", skilld: "✔ AWS: S3/EC2/ECS | Firebase | Heroku | Docker" },
+        { id: 6, skillt: "Environments || DevOps:", skilld: "✔ AWS: S3/EC2/ECS | Firebase | Heroku | Docker | Netlify" },
         { id: 7, skillt: "Databases:", skilld: "✔ MongoDB | PostgreSQL | MySQL | Cloud Firestore" },
         { id: 8, skillt: "Payment Processing:", skilld: "✔ Stripe | Braintree/PayPal" },
         { id: 9, skillt: "Web Scraping/Web crawling:", skilld: "✔ NodeJS + Puppeteer | Python Scrapy" },
-        { id: 10, skillt: "Workflow & Version Control:", skilld: "✔ CI/CD | Pipelines | Git(GitHub or Bitbucket)" }
+        { id: 10, skillt: "Workflow & Version Control:", skilld: "✔ CI/CD | Pipelines | Git(GitHub/Bitbucket) | CircleCI" }
       ],
     about: { me: "I am a self-motivated, innovative, proactive and achievement oriented individual, also highly Knowledgeable in various professional fields.\n I'm a seasoned developer with over 7 years experience building robust applications.\n I am ready to apply my skills, experience and background to a challenging and stimulating situation, enabling me to make positive contribution in making peoples lives better." },
     profile: [
@@ -28,6 +28,8 @@ const iState = {
         { id: 5, tittle: "Address", description: "P.O Box 23580, 00100\n Nairobi." },
         { id: 6, tittle: "Mobile No.", description: "+254 714201317\n+254 737005065" },
         { id: 7, tittle: "Website", description: "https://bryanczar.com" },
+        { id: 77, tittle: "GitHub Profile", description: "https://github.com/czerian" },
+        { id: 78, tittle: "Upwork Profile", description: "https://upwork.com/fl/bryanczar" },
         { id: 8, tittle: "Email", description: "king@bryanczar.com\nczerianx@gmail.com" },
         { id: 9, tittle: "Language Proficiency", description: "English\nSwahili\nKamba" }
       ],
