@@ -12,9 +12,8 @@ const ResumeDev = (props) => {
   useEffect(() => {
     console.log('heat');
     console.log(props);
-    // resumeDevAction(); 
-    // props.resumeDevAction(); 
-  });
+    props.resumeDevAction(); 
+  }, []);
 
   return (
         <div className="fx fxdc fxjcc fxaic tac devx">

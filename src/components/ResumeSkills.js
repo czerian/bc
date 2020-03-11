@@ -6,9 +6,10 @@ import PropTypes from "prop-types";
 
 const ResumeSkills = (props) => {
   const { skills } = props.skills;
+  
   useEffect(() => {
-    // props.resumeDevAction(); 
-  });
+    props.resumeSkillsAction()
+  }, []);
 
   return (
     <div className="rsm skills">

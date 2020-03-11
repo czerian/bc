@@ -11,7 +11,7 @@ class Home extends Component {
     return (
         <>
         <Helmet>
-          <title>Full-Stack JavaScript Engineer | JSKing | React Genius</title>
+          <title>Full-Stack JavaScript Engineer | React Genius</title>
           <meta name="theme-color" content="#2e8b57" />
           <meta name="sexxy" content="Full-Stack JavaScript Engineer | React Genius" />                   
         </Helmet>

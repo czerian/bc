@@ -6,9 +6,10 @@ import PropTypes from "prop-types";
 
 const ResumeProfile = (props) => {
   const { profile } = props.profile;
+
   useEffect(() => {
-    // props.resumeDevAction(); 
-  });
+    props.resumeProfileAction(); 
+  }, []);
 
   return (
             <div className="rsm profile">

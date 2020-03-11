@@ -7,8 +7,8 @@ import PropTypes from "prop-types";
 const ResumeEducation = (props) => {
   const { education } = props.education;
   useEffect(() => {
-    // props.resumeEducationAction(); 
-  });
+    props.resumeEducationAction(); 
+  }, []);
 
   return (
     <div className="rsm education">
