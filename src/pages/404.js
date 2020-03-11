@@ -12,18 +12,13 @@ class Nope extends Component {
           Go =&gt; <Link to="/">Home</Link>
         </h4>
         <ul className="nav">
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/niro">Niro</Link>
-          </li>
-          <li>
-            <Link to="/skills">Skills</Link>
-          </li>
-          <li>
-            <Link to="/dummy">404 Page</Link>
-          </li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/niro">Niro</Link></li>
+          <li><Link to="/skills">Skills</Link></li>
+          <li><a href="https://github.com/czerian/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://upwork.com/fl/bryanczar/" target="_blank" rel="noopener noreferrer">Upwork</a></li>
+          <li><Link to="/contact-me">Contact Me</Link></li>
+          <li><Link to="/dummy">404 Page</Link></li>
         </ul>
       </div>
     );
