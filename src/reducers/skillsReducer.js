@@ -2,7 +2,7 @@ import { SKILLS } from "../actions/types";
 
 const initialState = {
   greens: [
-    { id: 1, skillt: "Front-End Development:", skilld: "✔ JavaScript | React (including Hooks & Context)\n✔ Redux (including Hooks) | Redux Saga | Redux Thunk\n✔ React Router | Styled Components | Storybook \n✔ React Spring | React Transition Group\n✔ Next.js | Gatsby\n✔ TypeScript | Flow | JSX | Babel | Webpack | Sass" },
+    { id: 1, skillt: "Front-End Development:", skilld: "✔ JavaScript | React (including Hooks & Context)\n✔ Redux (including Hooks) | Redux Saga | Redux Thunk\n✔ React Router | Styled Components | Storybook \n✔ React Spring | React Transition Group\n✔ Next.js | Gatsby\n✔ Formik | Final-Form | Redux-Form\n✔ TypeScript | Flow | JSX | Babel | Webpack | Sass" },
     { id: 2, skillt: "Back-End Development:", skilld: "✔ Node.js | Express.js | Ruby on Rails | Socket.io\n✔ REST APIs | GraphQL | Apollo" },
     { id: 3, skillt: "Mobile Development:", skilld: "✔ React Native - Native Android & iOS mobile apps development" },
     { id: 4, skillt: "Unit Testing:", skilld: "✔ Jest" },
