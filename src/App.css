@@ -98,7 +98,7 @@ a:visited, a:active, a:link, a:hover
 {}
 .bioimg
 {background-color: #76b900;background-color:#37a000;background-color: #2e8b57;
-  border-radius: 50%;width: 340px;padding: 10px;font-size: 0;line-height: 0;}
+  border-radius: 50%;width: 340px;height: 340px;padding: 10px;font-size: 0;line-height: 0;}
 .bioimg img
 {border-radius: 50%;width: 100%;}
 .skills
@@ -136,7 +136,7 @@ a:visited, a:active, a:link, a:hover
   background-color: #eaeaea;box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.55);
   border: 1px solid #DDD;left: 50%;
   -webkit-transform: translate(-50%, 0%);transform: translate(-50%, 0%);
-  width: fit-content;
+  width: fit-content;width:max-content;
 }
 .navigation .nav
 {margin: 0;padding: 0;}
@@ -223,7 +223,7 @@ a:visited, a:active, a:link, a:hover
 .resume
 {max-width: 1000px;margin: auto;padding: 80px 0;}
 .resume .bioimg
-{width: auto;max-width: 340px;background-color: #74B943;}
+{width: auto;max-width: 340px;max-height: 340px;background-color: #74B943;}
 .resume .w30
 {background-color: #3c3c3c;color: #fff;}
 .resume .w70
@@ -319,13 +319,13 @@ a:visited, a:active, a:link, a:hover
 }
 @media screen and (max-width:800px){
   .home
-  {-webkit-flex-direction:column;flex-direction:column}
+  {-webkit-flex-direction:column;flex-direction:column;background: #eaeaea;}
   .home>.w50
   {width:100%;height:50%}
   .home>.w50>.homelft,.home>.w50>.homerit
   {min-height:auto;padding:30px 15px}
   .bioimg
-  {max-width:240px}
+  {max-width:240px;max-height: 240px;}
   .navigation .nav li a 
   {font-size: 0.85em;padding: 5px 5px 6px 5px;}
 
@@ -342,6 +342,8 @@ a:visited, a:active, a:link, a:hover
 {width: fit-content;left: 50%;-webkit-transform: translate(-50%, 0%);transform: translate(-50%, 0%);}
 .titol div:last-child 
 {padding-left: 5px;font-size: 1.68rem;}
+.home .navigation
+{position: relative;left: auto;transform: none;}
 
 }
 

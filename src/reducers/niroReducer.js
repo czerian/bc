@@ -3,8 +3,8 @@ import { NIRO } from "../actions/types";
 const initialState = {
   items: [
     { id: 44, name: "Bryan Czar Muli" },
-    { id: 67, name: "Full-Stack JavaScript Engineer" },
-    { id: 83, name: "(JavaScript/React/Redux/React Native/Node.js) + Rails" },
+    { id: 67, name: "Full Stack JavaScript Engineer" },
+    { id: 83, name: "(TypeScript/React/React Native/NestJS/TanStack/Next.js/GraphQL" },
     { id: 19, name: "Feed Me" },
   ],
 };
